@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+
+#battle {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    gap: 30px;
+    background-image: url('/src/assets/background/battle_bg.png');
+    background-repeat: no-repeat;
+    background-attachment:scroll;
+    background-size: cover;
+  
+  }
+
+  /* Battle attack button */
+  #attack-btn:hover {
+    transform: scale(1.05) ;
+    filter: drop-shadow(0 1mm 1mm rgb(0, 0,0.19));
+  }
+  
+  /* gives button the effect of being clicked */
+  #attack-btn:active {
+    filter: drop-shadow(0 1mm 1mm rgb(0, 0,0.19));
+    transform: translateY(2px);
+  }
+  
+  /* Battle continue button*/
+  #battle-continue-btn:hover {
+    transform: scale(1.05) ;
+    filter: drop-shadow(0 1mm 1mm rgb(0, 0,0.19));
+  }
+  
+  /* gives button the effect of being clicked */
+  #battle-continue-btn:active {
+    filter: drop-shadow(0 1mm 1mm rgb(0, 0,0.19));
+    transform: translateY(2px);
+  }
+  

@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+
+#shop {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    gap: 30px;
+    background-image: url('/src/assets/background/shop_bg.png');
+    background-repeat: no-repeat;
+    background-attachment:scroll;
+    background-size: cover;
+  
+  }
+
+#item_btns{
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 23%;  
+  width: 20%;
+  justify-content:center;
+  align-items: center;
+  z-index: 2;
+}
+
+.hide {
+  display: none;
+  justify-content: center;
+  color: white;
+  list-style: none;
+  line-height: 1.5em;
+  font-family: "MedievalSharp";
+  font-weight: bold;
+  border: 2px solid rgb(237, 222, 54);
+  background-color: rgb(154, 82, 66);
+  padding-top: 10px;
+  padding-bottom: 5px;
+  margin-right: 20px;
+}
+
+#dagger {
+  margin-right: 15px;
+} 
+
+#dagger:hover {
+  transform: scale(1.05) ;
+  filter: drop-shadow(0 1mm 1mm rgb(0, 0,0.19));
+}
+
+#dagger:active {
+  filter: drop-shadow(0 1mm 1mm rgb(0, 0,0.19));
+  transform: translateY(2px);
+}
+#dagger:hover + .hide {
+  display: block;
+}
+
+#g_axe {
+  margin-right: 15px;
+}
+
+#g_axe:hover {
+  transform: scale(1.05) ;
+  filter: drop-shadow(0 1mm 1mm rgb(0, 0,0.19));
+}
+
+#g_axe:active {
+  filter: drop-shadow(0 1mm 1mm rgb(0, 0,0.19));
+  transform: translateY(2px);
+}
+
+#g_axe:hover + .hide {
+  display: block;
+}
+
+#spear {
+  margin-right: 15px;
+}
+
+#spear:hover {
+  transform: scale(1.05) ;
+  filter: drop-shadow(0 1mm 1mm rgb(0, 0,0.19));
+}
+
+#spear:active {
+  filter: drop-shadow(0 1mm 1mm rgb(0, 0,0.19));
+  transform: translateY(2px);
+}
+
+#spear:hover + .hide {
+  display: block;
+}
+
+#sword {
+  margin-right: 15px;  
+}
+
+#sword:hover {
+  transform: scale(1.05) ;
+  filter: drop-shadow(0 1mm 1mm rgb(0, 0,0.19));
+}
+
+#sword:active {
+  filter: drop-shadow(0 1mm 1mm rgb(0, 0,0.19));
+  transform: translateY(2px);
+}
+
+#sword:hover + .hide {
+  display: block;
+}
+
+
+.weapon-list button {
+  padding: 30px;
+}
+
+
+.weapon-list button:hover + .hide {
+  display: block;
+}
+
+#player_details{
+  color: white;
+  font-family: "MedievalSharp";
+  position: absolute;
+  top: 5%;  
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+#player-gold {
+  width: 50%;
+  padding: 1px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+/* Shop to battle button*/
+#shop-battle-btn:hover {
+  transform: scale(1.05) ;
+  filter: drop-shadow(0 1mm 1mm rgb(0, 0,0.19));
+}
+
+/* gives button the effect of being clicked */
+#shop-battle-btn:active {
+  filter: drop-shadow(0 1mm 1mm rgb(0, 0,0.19));
+  transform: translateY(2px);
+}

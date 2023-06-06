@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+
+#lobby {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    gap: 30px;
+    background-image: url('/src/assets/background/lobby_bg.png');
+    background-repeat: no-repeat;
+    background-attachment:scroll;
+    background-size: cover;
+  
+  }
+
+  /* Lobby to shop button */
+  #to-shop-btn:hover {
+    transform: scale(1.05) ;
+    filter: drop-shadow(0 1mm 1mm rgb(0, 0,0.19));
+  }
+  
+  /* gives button the effect of being clicked */
+  #to-shop-btn:active {
+    filter: drop-shadow(0 1mm 1mm rgb(0, 0,0.19));
+    transform: translateY(2px);
+  }
+  
+  /* Lobby to battle button*/
+  #to-battle-btn:hover {
+    transform: scale(1.05) ;
+    filter: drop-shadow(0 1mm 1mm rgb(0, 0,0.19));
+  }
+  
+  /* gives button the effect of being clicked */
+  #to-battle-btn:active {
+    filter: drop-shadow(0 1mm 1mm rgb(0, 0,0.19));
+    transform: translateY(2px);
+  }
+  
+  .lobby-buttons h4 {
+    color: white;
+    font-family: "MedievalSharp";
+    border: 4px solid rgb(237, 222, 54);
+    background-color: rgb(154, 82, 66);
+    width: 30%;
+    height: 70%;
+    padding: 20px;
+    line-height: 1.5em;
+  }

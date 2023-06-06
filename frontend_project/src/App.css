@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+
+.App {
+  text-align: center;
+}
+
+.log  {
+  border: 4px solid rgb(237, 222, 54);
+  background-color: rgb(154, 82, 66);
+  height: 100px; width:auto;
+  overflow:hidden; overflow-y:scroll;
+  color: white;
+  font-family: "MedievalSharp";
+  font-weight: bold;
+}
+
+.log h4 {
+  display: flex;
+  flex-direction: column;
+}
+
+.log li {
+  line-height: 2em;
+  display: flex;
+  flex-direction: column;
+}
+
+.GameWindow-border {
+  height: 50px;
+  background-color: black;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+header {
+  background-color: #200f0c;
+  padding-bottom: 50px;
+}
+
+h1 {
+  color: white;
+  font-family: "MedievalSharp";
+}
+
+ul li {
+  display: inline-block;
+  margin: 0 120px;
+}
+
+div.instructionContainer {
+  text-align: center;
+  color: white;
+  font-family: "MedievalSharp"
+}
+
+.instructionContainer h3 {
+  font-size: 22px;
+}
+
+ol.OL{
+  display: inline-block;
+  text-align: left;
+  font-size: 16px;
+}
+
+section {
+  background-color: white;
+}
+
+.instructionContainer {
+  height: 100%;
+  line-height: 1.5em;
+}
+
+.instructionContainer hr {
+  display: block;
+  height: 30px;
+  margin: auto 200px;
+  border-style: solid;
+  border-color: goldenrod;
+  border-width: 0 0 0.2px 0;
+}
+
+input[name="name"] {
+  border:none;
+  outline:none;
+  display:inline-block;
+  height:40px;
+  vertical-align:middle;
+  position:relative;
+  bottom:30px;
+  right:9px;
+  border-radius:22px;
+  width:220px;
+  box-sizing:border-box;
+  padding:0 18px; 
+}
+
+/* lobby-section  ---> .game-buttons */
+.lobby-section {
+  position: relative;
+  z-index: 0;
+}
+
+/* lobby-buttons */
+.lobby-buttons {
+  position: absolute;
+  top: 10%;  
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.lobby-buttons img {
+  width: 180px;
+  margin: 90px;
+}
+
+/* game-section */
+.game-section {
+  position: relative;
+  z-index: 0;
+}
+
+/* game-buttons */
+.game-buttons {
+  position: absolute;
+  top: 40%;  
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-buttons img {
+  width: 180px;
+  margin: 50px;
+}
+
+/* shop-section */
+.shop-section {
+  position: relative;
+  z-index: 0;
+}
+
+/* shop-buttons */
+.shop-buttons {
+  position: absolute;
+  top: 50%;  
+  align-items: right;
+  right: 0;
+}
+
+.shop-buttons img {
+  width: 180px;
+  margin: 50px;
+}
+
+/* battle-section */
+.battle-section {
+  position: relative;
+  z-index: 0;
+}
+/* battle-buttons */
+.battle-buttons {
+  position: absolute;
+  top: 25%;  
+  width: 100%;
+  display: flex;
+  justify-content:flex-end;
+  align-items: center;
+}
+
+.battle-buttons img {
+  width: 180px;
+  margin: 50px;
+}
+
+/* FOOTER SECTION: START */
+.footer-top-container {
+  background-color: #200f0c;
+  bottom: 57px;
+  width: 100%;
+  margin: 0;
+  padding-top: 50px;
+}
+  
+.footer-content{
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+  
+.footer-heading {
+  flex-direction: column;
+  margin-right: 1rem;
+  display: flex;
+  margin-left: 1rem;
+  padding-top: 1rem;
+  max-width: 40%;
+}
+  
+.footer-heading h2 {
+  margin-bottom: 2rem;
+  font-family: 'MedievalSharp','Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS','sans-serif';
+  font-size: 21px;
+  font-weight:bolder;
+  text-transform: uppercase;
+  
+}
+  
+.footer-heading a {
+  color: white;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+}
+  
+.footer-heading a:hover {
+  color: goldenrod;
+  transition: 0.3s ease-out;
+}
+
+.footer-email-form h2 {
+  margin-bottom: 1rem;
+  color: white;
+  white-space: nowrap;
+  font-size: 21px;
+}
+  
+.footer-top-1-logo {
+  display: flex;
+  justify-content: flex-start;
+}
+  
+#footer-email {
+  width: 200px;
+  height: 34px;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  padding-left: 0.5rem;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+}
+
+.footer-input-btn {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-input-btn input{
+  margin-right: 2rem;
+}
+  
+#footer-email::placeholder {
+  color: #b1b1b2;
+}
+  
+#footer-email-btn {
+  width: 100px;
+  height: 35px;
+  border-radius: 4px;
+  background-color: goldenrod;
+  outline:none;
+  border: none;
+  color: white;
+  font-size: 18px;
+  font-family: 'MedievalSharp','Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS','sans-serif';
+}
+  
+#footer-email-btn:hover {
+  cursor: pointer;
+  background-color: gold;
+  box-shadow: 0 0px 10px  0.5px rgb(255, 241, 164);
+}
+
+.footer-social hr {
+  display: block;
+  height: 30px;
+  margin: auto 100px;
+  border:none;
+  border-style: solid;
+  border-color: goldenrod;
+  border-width: 0 0 1px 0;
+  border-radius: 10px
+}
+
+.footer-social h2 {
+  color: white;
+  margin-left: 2rem;
+  margin-top: 0.5rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS','sans-serif';
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.footer-social-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.footer-social-content li:hover {
+  transform: scale(1.2);
+}
+
+.footer-social a {
+  list-style: none;
+  display: inline-flex;
+  margin:0.5em;
+  padding: 0.2em;
+  justify-content:center; 
+}
+
+.footer-bottom {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 0.2rem;
+  padding-right: 0;
+  padding-left: 0;
+  font-size: 10px;
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS','sans-serif';
+  margin-top: -1.1rem;
+  bottom: 0px;
+  width: 100%;
+} 
